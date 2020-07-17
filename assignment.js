@@ -19,13 +19,13 @@ console.log("Calculated Value is : ",result ,"miles");
 // assignment 2 || calculating required wood amount
 
 function woodCalculator(chair, table, bed){
-    var chairCount = chair * 1;
-    var tableCount = table * 3;
-    var bedCount = bed * 5;
+    var chairCount = chair * 1 ;
+    var tableCount = table * 3 ;
+    var bedCount = bed * 5 ;
     var total = chairCount+ tableCount + bedCount;
     return total;
 }
-var total = woodCalculator(2,3,4);
+var total = woodCalculator(2 , 3 , 4);
 console.log("Total required Wood is : " , total ,"cubic"  );
 
 
@@ -83,7 +83,7 @@ function tinyFriend(friends)
     
 }
 
- var youngerFriend = tinyFriend(["sakib","akib","Don","habibullah","naimul","kaderullahKhan"]);
+ var youngerFriend = tinyFriend(["sakib" , "akib" , "Don" , "habibullah" , "naimul","kaderullahKhan"]);
  console.log("The Younger Friend is: ",youngerFriend);
 
 
