@@ -14,7 +14,9 @@ function feetToMile(feet){
 
 var result = feetToMile(7859);
 result = result.toFixed(2);     //in order to get 2 value after decimal point
-console.log("Calculated Value is : ",result ,"miles");
+console.log("Calculated Value is : " ,result ,"miles");
+
+
 
 // assignment 2 || calculating required wood amount
 
@@ -22,7 +24,7 @@ function woodCalculator(chair, table, bed){
     var chairCount = chair * 1 ;
     var tableCount = table * 3 ;
     var bedCount = bed * 5 ;
-    var total = chairCount+ tableCount + bedCount;
+    var total = chairCount + tableCount + bedCount;
     return total;
 }
 var total = woodCalculator(2 , 3 , 4);
@@ -30,13 +32,13 @@ console.log("Total required Wood is : " , total ,"cubic"  );
 
 
 
-// Assignment-4 || BrickCalculator Making
+// Assignment-3 || BrickCalculator Making
 function brickCalculator(height)
 {
     if(height<=10){
         
-            var footValue = height*15;
-            brickNeed = footValue*1000; 
+            var footValue = height * 15;
+            brickNeed = footValue * 1000; 
         
     }
 
