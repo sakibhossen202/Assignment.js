@@ -33,33 +33,26 @@ console.log("Total required Wood is : " , total ,"cubic"  );
 
 
 // Assignment-3 || BrickCalculator Making
-function brickCalculator(height)
-{
-    if(height<=10){
-        
-            var footValue = height * 15;
-            brickNeed = footValue * 1000; 
-        
-    }
+function brickCalculator(floor){
+    var brick1 = 0 ;
+    var brick2 = 0 ;
+    var brick3= 0;
 
-    else if(height <= 20){
-        
-            var footValue = height * 12;
-            var brickNeed = footValue * 1000;
-        
-    }
-    else  {
-        
-            var footValue = height * 10;
-            var brickNeed = footValue * 1000;
+    for(i=1;i<=floor;i++){
+        if(i>=1 && i<=10){
+            var brick = i*15*1000;
         }
-        return brickNeed;
+        else if(i>=11 && i<=20){
+            var brick2= (i-10)*12*1000;
+        }
+        else if(i>20){
+            var bricks = (i-20)*10*1000;
+        }total = brick1 + brick2 + brick3;
+    }
+    return total;
 }
-    
-
-
-var brickResult = brickCalculator(12);
-console.log(brickResult);
+var resultBrick = brickCalculator(12);
+console.log(resultBrick) 
 
 
 
